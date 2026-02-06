@@ -35,7 +35,7 @@ export default function ContactPage() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form),
     });
-
+console.log("📤 Contact form data sent to server:", form);
     setLoading(false);
     setShowPopup(true);
 
